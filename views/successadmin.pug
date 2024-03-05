@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    <title>User List</title>
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      table {
+        width: 600px;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+  body
+    table
+      thead
+        tr
+          th User ID
+          th Password Hash
+      tbody
+        each user in users
+          if user.userid !== 'admin_test'
+            tr
+              td #{user.userid}
+              td #{user.password_hash}

@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login Form
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    }
+    .login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d3cdcd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    }
+    .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .form-group {
+    margin-bottom: 20px;
+    }
+    .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    .form-group input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    .form-group input[type="submit"] {
+    background-color: #38f364;
+    color: #fff;
+    cursor: pointer;
+    }
+    .form-group input[type="submit"]:hover {
+    background-color: #03a032;
+    }
+.login-container
+  h2 Login Form
+  form(action='#' method='post')
+    .form-group
+      label(for='userid') User ID:
+      input#userid(type='text' name='userid' required='')
+    .form-group
+      label(for='password') Password:
+      input#password(type='password' name='password' required='')
+    .form-group
+      input(type='submit' value='Login')
