@@ -18,7 +18,7 @@ app.set('view engine', 'pug'); // Set the template engine as pug
 app.set('views', path.join(__dirname, 'views')); // Set the views directory
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/OCS_data', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://ishantbansal9876:bansalishant@userdata.4qomhf7.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Define contact schema and model
 const contactSchema = new mongoose.Schema({
