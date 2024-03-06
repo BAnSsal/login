@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "name": "login",
     "version": 2,
@@ -15,24 +14,4 @@
         "dest": "/"
       }
     ]
-  }
-=======
-{
-    "name": "login",
-    "version": 2,
-    "builds": [
-      {
-        "src": "/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-        
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-  }
->>>>>>> c050e9f (vercel config)
-  
+}
